@@ -6,4 +6,4 @@ class JrelloSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Jrello
-        fields = ('id', 'title', 'is_completed', 'priority', 'url')
+        fields = ('id', 'title', 'description', 'is_completed', 'priority', 'last_edited', 'url')

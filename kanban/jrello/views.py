@@ -5,5 +5,5 @@ from rest_framework.views import APIView
 
 
 class JrelloViewSet(viewsets.ModelViewSet):
-    queryset = Jrello.objects.all().order_by('name')
+    queryset = Jrello.objects.all().order_by('title')
     serializer_class = JrelloSerializer

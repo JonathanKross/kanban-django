@@ -17,7 +17,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'todo.apps.ToDoConfig',
+    'jrello.apps.JrelloConfig',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
