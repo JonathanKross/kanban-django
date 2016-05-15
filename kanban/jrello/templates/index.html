@@ -6,8 +6,27 @@
     <title>Jrello</title>
   </head>
   <body>
-    <p>
-      Hello World
-    </p>
+    {% csrf_token %}
+    <ul id="tasks">
+
+    </ul>
+    <form id="task" action="" method="post">
+      <legend>Create Task</legend>
+      <label for="">Title</label>
+      <input type="text" name="title" value="">
+      <br/>
+      <label for="">Description</label>
+      <input type="text" name="description" value="">
+      <br/>
+      <label for="">Priority</label>
+      <input type="text" name="priority" value="">
+      <br/>
+      <label for="">Completed</label>
+      <input type="text" name="is_completed" value="">
+      <br/>
+      <input type="submit" value="Create Task">
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="static/jrello.js"></script>
   </body>
 </html>
