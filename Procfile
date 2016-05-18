@@ -1,1 +1,1 @@
-web: gunicorn kanban.wsgi --log-file -
+web: gunicorn --pythonpath kanban kanban.wsgi --log-file -
