@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>KANBAN</title>
+		<style>
+		body {background-color: lightblue; font-family: verdana}
+		input {color: darkblue;}
+		form {color:green;}
+		div.fixed {
+    		position: fixed;
+    		right: 0;
+    		width: 300px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="fixed"><img src='gsd.png' alt="Sweet Pic, I swear"
+		style="width:250px;height:200px;"></div>  -->
+		<p> To Do List </p>
+		<ul id='cards'>
+
+		</ul>
+		<form id="card" action="" method="post">
+			<legend>Create Card</legend>
+			<label for="">Name</label>
+			<input type="text" name="name" value="">
+			<br/>
+			<label for="">Description</label>
+			<input type="text" name="description" value="">
+			<br/>
+			<label for="">Status</label>
+			<input type="text" name="status" value="">
+			<br/>
+			<label for="">Priority</label>
+			<input type="text" name="priority" value="">
+			<br/>
+			<input type="submit" value="Create Card">
+			<td><input type="reset" id="configreset" value="Reset"></td>
+		</form>
+
+		<p></p>
+		<form id="card" action="" method="patch">
+			<legend>Edit Card</legend>
+			<label for="">Name</label>
+			<input type="text" name="name" value="">
+			<br/>
+			<label for="">Description</label>
+			<input type="text" name="description" value="">
+			<br/>
+			<label for="">Status</label>
+			<input type="text" name="status" value="">
+			<br/>
+			<label for="">Priority</label>
+			<input type="text" name="priority" value="">
+			<br/>
+			<input type="submit" value="Edit Card">
+			<td><input type="reset" id="configreset" value="Reset"></td>
+			<p></p>
+		<form id="card" action="" method="delete">
+			<legend>Delete Card</legend>
+			<label for="">Name</label>
+			<input type="text" name="name" value="">
+			<input type="submit" value="Delete Card">
+			<td><input type="reset" id="configreset" value="Reset"></td>
+		</form>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+	</script>
+		<script src="/static/cards/kanban.js"></script>
+	</body>
+</html>
