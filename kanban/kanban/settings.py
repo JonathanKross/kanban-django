@@ -1,5 +1,6 @@
 import os
 from .secrets import *
+import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -100,8 +101,6 @@ SECRET_KEY = '!f)(f73lgvp7e1$efv*paictkl+ji@7)4_^9!8_ih81u7(7gv4'
 #
 # }
 DATABASES = {'default': {}}
-# Update database configuration with $DATABASE_URL.
-import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
@@ -129,9 +128,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
